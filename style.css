@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Libre+Franklin:wght@300;600;700&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Libre Franklin', sans-serif;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+  :root{
+    --Blue: hsl(223, 87%, 63%);
+
+/* ### Secondary */
+
+    --Pale-Blue: hsl(223, 100%, 88%);
+    --Light-Red: hsl(354, 100%, 66%);
+
+/* ### Neutral */
+
+    --Gray: hsl(0, 0%, 59%);
+    --Very-Dark-Blue: hsl(209, 33%, 12%);
+  }
+body{
+     font-size: 20px;
+}
+main{
+  
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    /* justify-content: center; */
+    align-items: center;
+}
+.logo{
+    margin: 2.5em 0;
+}
+.mainHeading{
+    margin-bottom: 0.3em;
+    color:var(--Gray);
+    font-size: 2.05em;
+}
+.mainHeading::after{
+    content: "soon!";
+    color: var(--Very-Dark-Blue);
+    font-weight: 700;
+}
+form{
+    margin: 2em 0 3em 0 ;
+    width: 35em;
+    max-width: 100%;
+}
+.inputEmail{
+    outline: none;
+    border: 2px solid var(--Gray);
+    border-radius: 2em;
+    padding: 1em 2em;
+    width: 35em;
+    max-width: 100%;
+}
+.btn{
+    border: none;
+    background-color: var(--Blue);
+    padding: 1em 3em;
+    border-radius: 2.5em;
+    color: white;
+    font-weight: 700;
+   
+}
+.invalidEmail{
+    color: var(--Light-Red);
+    font-size: 0.7em;
+    margin-left: 2em;
+    display: none;
+}
+.statImage{
+    width: 400px;
+}
+.bottomSection{
+    margin-top: 2em; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.socalMedia{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  margin-bottom: .5em;
+}
+ion-icon {
+    color: var(--Gray);
+  }
+  .copyright{
+    color: var(--Gray);
+    font-size: .7em;
+  }
+
+@media (max-width: 626px){
+   
+    main{
+        margin: 10px;
+    }
+    .mainHeading{
+        text-align: center;
+    }
+    .subHeading{
+        text-align: center;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .inputEmail{
+        width: 100%;
+        order: 1;
+        margin-bottom: 0.5em;
+
+    }
+    .btn{
+        order: 3;
+    }
+    .invalidEmail{
+        margin-bottom: 0.5em;
+        order: 2;
+    }
+    .statImage{
+        width: 100%;
+    }
+   
+}
